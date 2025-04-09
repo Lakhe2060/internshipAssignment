@@ -1,0 +1,121 @@
+.homeContainer {
+    padding: 2rem;
+    background-color: #efefef;
+    min-height: 100vh;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+.filtersSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.searchBar input,
+.categoryFilter select {
+    padding: 0.75rem;
+    border: 1px solid #a5a5a5;
+    border-radius: 8px;
+    background-color: #efefef;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.searchBar input::placeholder {
+    color: #a5a5a5;
+}
+
+.searchBar input:focus,
+.categoryFilter select:focus {
+    outline: none;
+    border-color: #a5a5a5;
+    background-color: #ffffff;
+}
+
+.categoryFilter select {
+    cursor: pointer;
+}
+
+.errorMessage {
+    background-color: #efefef;
+    border-left: 4px solid #a5a5a5;
+    color: #000000;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.loadingSpinner {
+    color: #a5a5a5;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+
+.noProducts {
+    text-align: center;
+    font-size: 1rem;
+    color: #a5a5a5;
+}
+
+.productLink {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .homeContainer {
+        padding: 1rem;
+    }
+
+    .filtersSection {
+        gap: 0.75rem;
+    }
+
+    .searchBar input,
+    .categoryFilter select {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .productsGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .noProducts {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .homeContainer {
+        padding: 0.5rem;
+    }
+
+    .filtersSection {
+        gap: 0.5rem;
+    }
+
+    .searchBar input,
+    .categoryFilter select {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+
+    .productsGrid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .loadingSpinner {
+        font-size: 1rem;
+    }
+}

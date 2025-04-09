@@ -1,0 +1,144 @@
+.loginWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #efefef;
+    font-family: "Segoe UI", sans-serif;
+    color: #a5a5a5;
+}
+
+.loginContainer {
+    background-color: white;
+    border: 1px solid #a5a5a5;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 100%;
+    width: 400px;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(165, 165, 165, 0.2);
+}
+
+.loginHeader {
+    margin-bottom: 1rem;
+    color: #a5a5a5;
+    text-align: center;
+}
+
+.demoInfo {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #a5a5a5;
+}
+
+.formGroup {
+    margin-bottom: 1.25rem;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #a5a5a5;
+    font-weight: 500;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #a5a5a5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #efefef;
+    color: #a5a5a5;
+}
+
+.formGroup input:focus {
+    outline: none;
+    border: 1px solid #a5a5a5;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 2px rgba(165, 165, 165, 0.2);
+}
+
+.loginBtn {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #a5a5a5;
+    color: #efefef;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.loginBtn:hover {
+    background-color: #efefef;
+    color: #a5a5a5;
+}
+
+.errorMessage {
+    background-color: #efefef;
+    border-left: 4px solid #a5a5a5;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    color: #a5a5a5;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .loginContainer {
+        padding: 1.5rem;
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .loginWrapper {
+        padding: 1rem;
+    }
+
+    .loginHeader {
+        font-size: 1.5rem;
+    }
+
+    .demoInfo {
+        font-size: 0.8rem;
+    }
+
+    .formGroup {
+        margin-bottom: 1rem;
+    }
+
+    .formGroup label {
+        font-size: 0.875rem;
+    }
+
+    .formGroup input {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .loginBtn {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .errorMessage {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginContainer {
+        padding: 1rem;
+    }
+
+    .loginBtn {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .loginHeader {
+        font-size: 1.25rem;
+    }
+}
